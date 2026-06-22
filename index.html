@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Retenciones 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Calculadora Automatizada de Retenciones</h1>
+
+    <div class="datos">
+        <input type="text" id="nombre" placeholder="Nombre Completo">
+        <input type="text" id="dni" placeholder="DNI / RUC">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Mes</th>
+                <th>Sueldo Bruto</th>
+                <th>Bonos</th>
+                <th>Ingreso Mensual</th>
+            </tr>
+        </thead>
+        <tbody id="tablaMeses"></tbody>
+    </table>
+
+    <button onclick="calcular()">Calcular Retención</button>
+
+    <div class="resultado">
+        <h2>Resumen</h2>
+
+        <p><strong>Total Anual:</strong> S/ <span id="totalAnual">0</span></p>
+
+        <p><strong>UIT 2026:</strong> S/ 5,500</p>
+
+        <p><strong>Deducción (7 UIT):</strong> S/ 38,500</p>
+
+        <p><strong>Base Imponible:</strong> S/ <span id="baseImponible">0</span></p>
+
+        <p><strong>Impuesto Anual:</strong> S/ <span id="impuesto">0</span></p>
+
+        <p><strong>Retención Mensual Sugerida:</strong> S/ <span id="retencion">0</span></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
